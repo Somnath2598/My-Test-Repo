@@ -1,14 +1,12 @@
 package com.example.jenkins;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+public class HelloJenkins {
 
-import org.junit.jupiter.api.Test;
+    public static void main(String[] args) {
+        System.out.println(getMessage());
+    }
 
-public class HelloJenkinsTest {
-
-    @Test
-    public void testGetMessage() {
-        String expected = "Hello Jenkins! Your Maven project is running successfully.";
-        assertEquals(expected, HelloJenkins.getMessage());
+    public static String getMessage() {
+        return "Hello Jenkins! Your Maven project is running successfully.";
     }
 }
